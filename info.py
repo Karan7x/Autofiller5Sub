@@ -15,8 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '15065770'))
 API_HASH = environ.get('API_HASH', '0a187891c80de9908291ab006bf26c66')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6305022250:AAH_NLrJrMMKOs08jE2_zYwBnhsQmbVKF5A
-")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6305022250:AAH_NLrJrMMKOs08jE2_zYwBnhsQmbVKF5A")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -30,8 +29,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5207870875 1773110781 5304353210
 ').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001576752976 -1001821608833 -1001560569939
-').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001576752976 -1001821608833 -1001560569939').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '5207870875').split()]
@@ -46,8 +44,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://milaazul:milaazul777@cluster0.eij9wwa.mongodb.net/?retryWrites=true&w=majority
-")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://milaazul:milaazul777@cluster0.eij9wwa.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "milaazul")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
